@@ -13,6 +13,15 @@
             "author": {
                 "name": "Albert Yun"
             }
+        },
+        {
+            "name": "agent-doc-initializer",
+            "source": "./plugins/agent-doc-initializer",
+            "description": "Agent Doc Initializer",
+            "version": "1.0.0",
+            "author": {
+                "name": "Albert Yun"
+            }
         }
     ]
 }

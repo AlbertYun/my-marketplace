@@ -25,6 +25,7 @@
 |-----------|--------------|----------------|
 | DB 구조 확인/수정 | `.docs/db/README.md` | 해당 `.docs/db/*.sql` |
 | API 추가/수정 | `.docs/api/README.md` | 해당 `.docs/api/[도메인].md` |
+| 엔진/배치/워커 | `.docs/engine/README.md` | 해당 `.docs/engine/[작업명].md` |
 | 서버/nginx 설정 | `.docs/server/README.md` | `.docs/server/nginx.md` |
 | 클라이언트 페이지 | `.docs/client/README.md` | `.docs/client/pages.md` |
 | 공통 함수 확인 | `.docs/common/README.md` | `.docs/common/utils.md` |
@@ -63,6 +64,14 @@
 | 함수 시그니처 변경 | `.docs/common/README.md` 및 `utils.md` 수정 |
 | 함수 삭제/deprecated | `.docs/common/README.md`에 ~~취소선~~ 및 대체 함수 안내 |
 | 클래스/모듈 신규 추가 | `.docs/common/README.md` 모듈 목록 추가<br>`.docs/common/[모듈명].md` 신규 생성 |
+
+### 엔진/배치/워커 변경 시
+| 변경 내용 | 업데이트할 문서 |
+|-----------|--------------|
+| 배치/워커 신규 추가 | `.docs/engine/README.md` 작업 목록 추가 (트리거, 위치, 입출력)<br>`.docs/engine/[작업명].md` 상세 생성 (복잡한 파이프라인일 경우) |
+| 스케줄(cron) 변경 | `.docs/engine/README.md` 해당 작업의 트리거 수정<br>`.docs/server/cron.md`에도 반영 |
+| 파이프라인 입출력 변경 | `.docs/engine/[작업명].md` 수정 |
+| 작업 삭제/중단 | `.docs/engine/README.md`에 deprecated 표시 |
 
 ### 서버/인프라 변경 시
 | 변경 내용 | 업데이트할 문서 |

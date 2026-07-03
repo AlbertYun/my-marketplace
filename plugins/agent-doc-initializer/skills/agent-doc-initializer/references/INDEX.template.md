@@ -14,6 +14,7 @@
 | DB 테이블 확인/수정 | → [`.docs/db/README.md`](.docs/db/README.md) |
 | API 엔드포인트 확인/수정 | → [`.docs/api/README.md`](.docs/api/README.md) |
 | 공통 함수 확인 (구현 전 필수) | → [`.docs/common/README.md`](.docs/common/README.md) |
+| 엔진/배치/워커/스케줄러 | → [`.docs/engine/README.md`](.docs/engine/README.md) |
 | 서버/nginx/배포 설정 | → [`.docs/server/README.md`](.docs/server/README.md) |
 | 클라이언트 페이지/컴포넌트 | → [`.docs/client/README.md`](.docs/client/README.md) |
 | 외부 API 연동 스펙 | → [`.docs/external/README.md`](.docs/external/README.md) |
@@ -49,6 +50,10 @@
 │   ├── README.md             ← 공통 함수/클래스 인덱스 (구현 전 필수 확인)
 │   └── [모듈명].md           ← 모듈별 상세 설명
 │
+├── engine/
+│   ├── README.md             ← 배치/워커 목록 + 트리거 + 실행방법
+│   └── [작업명].md           ← 파이프라인별 상세 (입출력, 스케줄)
+│
 ├── server/
 │   ├── README.md             ← 서버 구성 개요
 │   ├── nginx.md              ← nginx 설정 상세
@@ -79,6 +84,7 @@
 DB 변경      → .docs/db/README.md + 해당 .sql
 API 변경     → .docs/api/README.md + .docs/api/[도메인].md
 함수 변경    → .docs/common/README.md
+엔진/배치    → .docs/engine/README.md
 nginx 변경   → .docs/server/nginx.md
 페이지 추가  → .docs/client/pages.md
 외부 API     → .docs/external/[서비스명].md

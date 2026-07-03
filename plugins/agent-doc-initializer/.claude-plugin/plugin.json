@@ -1,7 +1,7 @@
 {
     "name": "agent-doc-initializer",
-    "description": "Agent Doc Initializer",
-    "version": "1.0.0",
+    "description": "프로젝트를 분석해 AI 에이전트용 색인형 문서 구조(.docs/AGENT.md, INDEX.md, 도메인별 README)를 자동 생성·갱신",
+    "version": "2.0.0",
     "author": {
         "name": "Albert Yun"
     }

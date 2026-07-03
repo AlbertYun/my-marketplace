@@ -103,6 +103,28 @@
 - 최종수정: YYYY-MM-DD
 -->
 
+<!-- ===== ENGINE 도메인 템플릿 ===== -->
+<!--
+## 배치/워커 작업 목록
+
+| 작업명 | 위치 | 트리거 | 입력 → 출력 | 최종수정 |
+|--------|------|--------|-----------|---------|
+| 일봉수집 | scripts/collect-daily.ts | cron 0 18 * * 1-5 | 키움 API → chart_daily | YYYY-MM-DD |
+| 인보이스분석 | worker/invoice.ts | BullMQ (invoice-queue) | PDF → invoice JSON | YYYY-MM-DD |
+
+## 작업 상세
+
+### [작업명]
+- 위치: scripts/xxx.ts
+- 트리거: cron 표현식 | 큐 이름 | 수동 실행
+- 실행 방법: node scripts/xxx.ts 또는 pm2 name
+- 입력: (소스 데이터/API)
+- 출력: (테이블/파일/알림)
+- 실패 시 동작: 재시도 정책, 알림 채널
+- 의존: 외부 API, 환경변수
+- 최종수정: YYYY-MM-DD
+-->
+
 <!-- ===== SERVER 도메인 템플릿 ===== -->
 <!--
 ## 서버 구성

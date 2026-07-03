@@ -106,7 +106,19 @@
 3. .docs/client/README.md 의 라우팅 구조 업데이트
 ```
 
-### CASE 7: nginx 설정이 바뀌었을 때
+### CASE 7: 배치/워커/엔진 작업이 추가·변경됐을 때
+
+```
+작업 내용: scripts/ 또는 worker/에 새 배치 작업 추가, cron 스케줄 변경 등
+↓
+1. .docs/engine/README.md 열기 (없으면 신규 생성)
+2. "작업 목록" 테이블에 추가/수정:
+   | 작업명 | 위치 | 트리거 | 입력 → 출력 | YYYY-MM-DD |
+3. 파이프라인이 복잡하면 .docs/engine/[작업명].md 상세 생성
+4. cron 기반이면 .docs/server/cron.md에도 스케줄 반영
+```
+
+### CASE 8: nginx 설정이 바뀌었을 때
 
 ```
 작업 내용: /etc/nginx/sites-enabled/app 수정
@@ -120,7 +132,7 @@
    변경이유: ...
 ```
 
-### CASE 8: 환경변수가 추가됐을 때
+### CASE 9: 환경변수가 추가됐을 때
 
 ```
 작업 내용: .env 에 새 변수 추가
@@ -131,7 +143,7 @@
 3. .env.example 에도 반영 (실제 값은 제외)
 ```
 
-### CASE 9: 외부 API 연동이 추가됐을 때
+### CASE 10: 외부 API 연동이 추가됐을 때
 
 ```
 작업 내용: 새 외부 API 호출 코드 추가
@@ -165,6 +177,9 @@
 
 □ 공통 함수 변경이 있었는가?
   → .docs/common/README.md 업데이트했는가?
+
+□ 엔진/배치/워커 변경이 있었는가?
+  → .docs/engine/README.md 업데이트했는가?
 
 □ 서버/인프라 변경이 있었는가?
   → .docs/server/ 하위 해당 파일 업데이트했는가?
